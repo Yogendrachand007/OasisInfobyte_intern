@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter </title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-right: 7px;
+        }
+
+        input {
+            width: 120px;
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+        select {
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #18cc2a;
+            color: #fff;
+            cursor: pointer;
+            border-radius:5px;
+        }
+
+        #result {
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>TEMPERATURE CONVERTER WEBSITE</h2>
+    <label for="temperature">Enter temperature:</label>
+    <input type="text" id="temperature" placeholder="Enter temperature">
+    <select id="unit">
+        <option value="Celsius">Celsius</option>
+        <option value="Kelvin">Kelvin</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+    </select>
+    <button id="convertBtn">Convert</button>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
